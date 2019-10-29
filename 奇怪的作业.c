@@ -1,18 +1,15 @@
-#include<stdio.v>
+#include<stdio.h>
 int main(void)
 {
-    int a,b,c,d,x;
-    float y;
-    printf("Enter a:");
-    scanf("%d",&a);
-   printf("Enter b:");
-    scanf("%d",&b);
-    printf("Enter c:");
-    scanf("%d",&c);
-    printf("Enter d:");
-    scanf("%d",&d);
-    x=a+b+c+d;
-    y=(a+b+c+d)/4;
-    printf("x=%d,y%.1f\n",x,y);
+    int a,b,c,d,sum;
+    float aver;
+    a=10;
+    b=20;
+    c=30;
+    d=40;
+    sum = a+b+c+d;
+    aver = sum/4.0f;
+    printf("Sum is %d,average is %.1f\n",sum,aver);
     return 0;
+    
 }
